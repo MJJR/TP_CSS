@@ -1,0 +1,24 @@
+div {
+    text-align : center;
+    width : 100px;
+    height:100px;
+    background:red;
+    -webkit-transition: width 2s,  background 2s;
+    transition: width 2s,background 2s;
+    animation: rotation 4s infinite;
+
+}
+
+div:hover{
+    width: 300px;
+    background : blue;
+}
+
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
